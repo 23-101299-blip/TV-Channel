@@ -152,6 +152,11 @@ button:hover{
     scale: 1.1;
 }
 
+.gap{
+    height: 262px;
+    width: 1440px;
+}
+
 .popular{
     width: 1199.128px;
     height: 632px;
