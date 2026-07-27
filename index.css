@@ -1,0 +1,109 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --pink: #FF00C2;
+    --blue: #00C2FF;
+    --yellow: #FAD400;
+}
+
+@font-face {
+    font-family: 'cartoon';
+    src: url(fonts/Cartoon\ Slam.ttf);
+}
+
+@font-face {
+    font-family: 'red';
+    src: url(fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'cartoon';
+}
+
+body{
+    width: 1440px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: var(--black); */
+}
+
+header{
+    margin: 40px 60px 0 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1320px;
+    height: 70px;
+    z-index: 99;
+}
+
+.logo{
+    width: 112px;
+    height: 70px;
+    background-size: cover;
+    background-image: url(assets/logo.png);
+}
+
+nav{
+    width: 634px;
+    height: 28px;
+    padding: 20px 58px;
+    background-color: var(--yellow);
+    border-radius: 76px;
+    border: 2px solid var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a{
+    color: var(--black);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.selected{
+    color: var(--white);
+}
+
+a:hover{
+    color: var(--white);
+}
+
+.hero{
+    width: 1440px;
+    height: 878px;
+    background-image: url(assets/hero.png);
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.sec1{
+    width: 1440px;
+    height: 1356px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    margin-top: 131px;
+    overflow: hidden;
+}
+
+.s1bg{
+    width: 1519.472px;
+    height: 1356px;
+    background-image: url(assets/s1bg.png);
+    background-size: cover;
+}
