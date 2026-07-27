@@ -25,7 +25,7 @@ let tlContents = [
         day: "Ocotber 3",
         year: "1996",
         tlTitle: "What a Cartoon!",
-        tlImg: "assets/ppg.png",
+        tlImg: "assets/ppgTl.png",
         imgClass: "tlImg3",
         tlSub: "This incubator program introduces future hits like Dexter’s Laboratory, Johnny Bravo, and The Powerpuff Girls."
     },
@@ -37,6 +37,42 @@ let tlContents = [
         tlImg: "assets/cnCIty.png",
         imgClass: "tlImg4",
         tlSub: "A major rebrand introduces the “CN City” aesthetic, giving the network a modern, character-driven identity."
+    },
+
+    {
+        day: "October 14",
+        year: "2014",
+        tlTitle: "CN App Releases",
+        tlImg: "assets/cnApp.png",
+        imgClass: "tlImg5",
+        tlSub: "The CN App becomes a primary destination for on-demand episodes and shorts."
+    },
+
+    {
+        day: "November 1",
+        year: "2022",
+        tlTitle: "Redraw your world",
+        tlImg: "assets/RYW.png",
+        imgClass: "tlImg6",
+        tlSub: "A new brand initiative focused on diversity, creativity, and empowering the next generation of creators."
+    },
+
+    {
+        day: "Today",
+        year: "2025",
+        tlTitle: "Multi-Platform CN",
+        tlImg: "assets/logo.png",
+        imgClass: "tlImg7",
+        tlSub: "The network positions itself as a hybrid ecosystem spanning TV, streaming, games, and creator-led digital content."
+    },
+
+    {
+        day: "",
+        year: "",
+        tlTitle: "",
+        tlImg: "",
+        imgClass: "",
+        tlSub: ""
     }
 
 ]

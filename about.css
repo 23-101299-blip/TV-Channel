@@ -22,6 +22,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'cartoon';
     src: url(fonts/Cartoon\ Slam.ttf);
@@ -37,9 +41,20 @@
     src: url(fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf);
 }
 
+@keyframes partAnim {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-2560px);
+    }
+}
+
 body{
     font-family: var(--mainFont);
     background-color: var(--black);
+    overflow-x: hidden;
 }
 
 a{
@@ -156,6 +171,18 @@ nav{
     width: 238px;
 }
 
+.tlImg5{
+    width: 130px;
+}
+
+.tlImg6{
+    width: 318px;
+}
+
+.tlImg7{
+    width: 296px;
+}
+
 .tlBlock{
     width: 180px;
     height: 309px;
@@ -171,4 +198,283 @@ nav{
 .tlSub{
     font-family: var(--secFont);
     font-size: var(--midFont);
+}
+
+#partners{
+    position: relative;
+    margin-top: -200px;
+    height: 100vh;
+    padding: 200px 0 300px 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.partnersBg{
+    position: absolute;
+    width: 120%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.partTitle{
+    font-size: var(--dayFont);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.partImgs{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 160px;
+    animation: partAnim 20s linear forwards infinite ;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+.s4{
+    width: 1440px;
+    height: 899px;
+    flex-shrink: 0;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    z-index: -100;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.s4d1{
+    width: 239px;
+    height: 400.916px;
+    flex-shrink: 0;
+    margin-left: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo4{
+    width: 179px;
+height: 89.5px;
+flex-shrink: 0;
+aspect-ratio: 179.00/89.50;
+background-image: url(assets/logo.png);
+background-size: cover;
+}
+.logodes{
+    color: var(--white);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.on{
+    color: #FFF;
+font-family: 'red';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.prime{
+    width: 140px;
+height: 79px;
+flex-shrink: 0;
+aspect-ratio: 140/79;
+background-image: url(assets/prime.png);
+background-size: cover;
+}
+.subscribe{
+    display: flex;
+width: 239px;
+height: 84.916px;
+padding: 13px 15px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+background-color: var(--yellow);
+color: var(--black);
+font-family: 'red';
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: all 0.3s ease;
+}
+.subscribe:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.maskimages{
+    width: 1579.295px;
+    height: 903.269px;
+    flex-shrink: 0;
+    background-image: url(assets/maskimagesss.png);
+    background-size: contain;
+}
+footer{
+    display: flex;
+width: 100%;
+padding: 2.162px 40px 0 40px;
+flex-direction: column;
+align-items: flex-start;
+flex-shrink: 0;
+background-color: var(--black);
+    display: flex;
+z-index: -200;
+justify-content: center;
+align-items: center;
+border-top: 2.162px solid #FAD400;
+margin: 0 auto;
+}
+.fdiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px;
+  padding: 40px;
+  color: white;
+}
+
+.fd1 {
+  grid-column: 1 / span 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fd2 {
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flogo {
+  width: 130px;
+  height: 80px;
+  background: url(assets/logo.png) no-repeat center / contain;
+}
+
+.des1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'in';
+  font-size: 10px;
+  line-height: 15px;
+  width: 196.036px;
+flex-shrink: 0;
+}
+
+/* Headings */
+h4 {
+  color: var(--yellow);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* Links list */
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.80);
+font-family: var(--secFont);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 15.135px; 
+letter-spacing: -0.108px;
+}
+
+.links li a:hover {
+  color: white;
+}
+.fd3 {
+  grid-column: 3 / span 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fd4 {
+  grid-column: 4 / span 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.socialmedia{
+    width: 159.279px;
+    height: 31.712px;
+    background-image: url(assets/sm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.newsteller{
+    color: rgba(255, 255, 255, 0.70);
+font-family: var(--secFont);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 12.973px; 
+}
+.emailbt{
+    display: flex;
+    height: 30.991px;
+    width: 296.15px;
+    padding: 7.207px 10.811px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 5.766px;
+    border: 0.721px solid #FAD400;
+    background: rgba(255, 255, 255, 0.10);
+    color: rgba(255, 255, 255, 0.40);
+    font-family: var(--secFont);
+    font-size: 10.09px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.108px;
+}
+.fdiv2{
+    display: flex;
+height: 35.315px;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
+border-top: 0.721px solid rgba(255, 255, 255, 0.10);
+margin-top: 36px;
+}
+h6{
+    color: rgba(255, 255, 255, 0.50);
+font-family: var(--secFont);
+font-size: 8.649px;
+font-style: normal;
+font-weight: 400;
+line-height: 12.973px; /* 150% */
+}
+.fdiv3{
+    display: flex;
+height: 12.973px;
+align-items: flex-start;
+gap: 21.622px;
 }
